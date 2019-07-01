@@ -49,17 +49,18 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
   min-height: calc(100vh - 60px);
+
   .icons {
     margin-top: 1rem;
-  }
-  a {
-    padding: 0.4rem;
-    color: set-text-color($primary-color);
-    &:hover {
-      color: $secondary-color;
-      @include easeOut();
+
+    a {
+      padding: 0.4rem;
+      color: set-text-color($primary-color);
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
     }
   }
 
@@ -105,6 +106,46 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+// My work
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
 }
 
 #main-footer {
