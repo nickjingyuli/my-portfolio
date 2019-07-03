@@ -86,6 +86,48 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  // Movie Hourse
+  main#movie-house {
+    padding: 4rem 0.5rem 0 0.5rem;
+  }
+  .image {
+    border: darken($primary-color, 30) 7px solid;
+  }
+  .center {
+    width: 100%;
+  }
+  .auth-container {
+    .auth-image {
+      width: 80%;
+    }
+  }
+  .db {
+    grid-template-areas:
+      "db-intro db-intro"
+      "db-image2 db-image1";
+  }
+  .detail {
+    grid-template-areas:
+      "dt-intro dt-intro dt-intro"
+      "dt-image1 dt-image2 dt-image3";
+    .dt-image1 {
+      width: 95%;
+    }
+    .dt-image2 {
+      width: 65%;
+    }
+    .dt-image3 {
+      width: 65%;
+    }
+  }
+  .search {
+    .image-container {
+      img {
+        width: 45%;
+      }
+    }
+  }
 }
 
 // Smartphones
@@ -104,5 +146,58 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  // Movie Hourse
+  .auth-container {
+    .auth-image {
+      margin-top: 0.5rem;
+      width: 80%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .db {
+    grid-template-areas:
+      "db-intro db-intro"
+      "db-image2 db-image2"
+      "db-image1 db-image1";
+    grid-gap: 0.5rem;
+
+    .db-image1 {
+      width: 100%;
+    }
+    .db-image2 {
+      width: 100%;
+    }
+  }
+  .detail {
+    grid-template-areas:
+      "dt-intro dt-intro dt-intro"
+      "dt-image1 dt-image1 dt-image1"
+      "dt-image3 dt-image3 dt-image3"
+      "dt-image2 dt-image2 dt-image2";
+    grid-gap: 0.5rem;
+
+    .dt-image1 {
+      width: 100%;
+    }
+    .dt-image2 {
+      width: 100%;
+    }
+    .dt-image3 {
+      width: 100%;
+    }
+  }
+  .search {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
   }
 }
