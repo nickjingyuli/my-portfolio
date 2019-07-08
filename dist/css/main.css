@@ -112,6 +112,8 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
+  body.show {
+    overflow: hidden; }
 
 h1,
 h2,
