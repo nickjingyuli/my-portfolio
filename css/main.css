@@ -113,6 +113,7 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
   body.show {
+    position: relative;
     overflow: hidden; }
 
 h1,
