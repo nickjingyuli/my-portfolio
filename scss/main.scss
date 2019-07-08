@@ -7,7 +7,6 @@
 
 html.show {
   overflow: hidden;
-  height: 100%;
 }
 
 body {
@@ -20,7 +19,6 @@ body {
   line-height: 1.5;
   &.show {
     overflow: hidden;
-    height: 100%;
   }
 }
 
