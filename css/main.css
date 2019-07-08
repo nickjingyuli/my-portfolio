@@ -93,6 +93,9 @@
 * {
   box-sizing: border-box; }
 
+html.show {
+  overflow: hidden; }
+
 body {
   background: #444;
   color: #fff;
@@ -114,7 +117,6 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
   body.show {
-    position: relative;
     overflow: hidden; }
 
 h1,
