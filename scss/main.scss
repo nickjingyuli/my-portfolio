@@ -102,8 +102,8 @@ main {
   grid-template-areas:
     "bio bio bioimage"
     "skill skill skill"
-    "edu edu edu";
-  // "job1 job2 job3";
+    "edu edu edu"
+    "job job job";
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -169,6 +169,31 @@ main {
             margin: 0;
           }
         }
+      }
+    }
+  }
+
+  .job {
+    grid-area: job;
+    h3 {
+      font-size: 1.5rem;
+    }
+    & > div {
+      width: 100%;
+      margin-top: 1rem;
+      display: grid;
+      grid-template-areas: "job1 job2 job3";
+      grid-gap: 30px;
+      & > div {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+        h4 {
+          font-size: 1rem;
+        }
+      }
+      .job1 {
+        grid-area: job2;
       }
     }
   }

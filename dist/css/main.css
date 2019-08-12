@@ -175,7 +175,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: "bio bio bioimage" "skill skill skill" "edu edu edu";
+  grid-template-areas: "bio bio bioimage" "skill skill skill" "edu edu edu" "job job job";
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr; }
   .about-info .bio-image {
@@ -226,6 +226,24 @@ main {
           justify-content: space-between; }
           .about-info .edu > div .edu-text .edu-name p {
             margin: 0; }
+  .about-info .job {
+    grid-area: job; }
+    .about-info .job h3 {
+      font-size: 1.5rem; }
+    .about-info .job > div {
+      width: 100%;
+      margin-top: 1rem;
+      display: grid;
+      grid-template-areas: "job1 job2 job3";
+      grid-gap: 30px; }
+      .about-info .job > div > div {
+        background: #515151;
+        padding: 0.5rem;
+        border-bottom: #1aa0ee 5px solid; }
+        .about-info .job > div > div h4 {
+          font-size: 1rem; }
+      .about-info .job > div .job1 {
+        grid-area: job2; }
 
 .projects {
   display: grid;
@@ -379,7 +397,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "skill" "edu" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "skill" "edu" "job";
     grid-template-columns: 1fr; }
     .about-info .skill > div {
       grid-template-columns: 1fr 1fr; }
