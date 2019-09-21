@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   &.show {
     overflow: hidden;
@@ -100,10 +100,10 @@ main {
 .about-info {
   display: grid;
   grid-template-areas:
-    "bio bio bioimage"
-    "skill skill skill"
-    "edu edu edu"
-    "job job job";
+    'bio bio bioimage'
+    'skill skill skill'
+    'edu edu edu'
+    'job job job';
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -146,7 +146,7 @@ main {
     & > div {
       margin-top: 1rem;
       display: grid;
-      grid-template-areas: "edu-image edu-text edu-text";
+      grid-template-areas: 'edu-image edu-text edu-text';
       grid-gap: 30px;
       grid-template-columns: 1fr 1fr 1fr;
       .edu-image {
@@ -182,7 +182,7 @@ main {
       width: 100%;
       margin-top: 1rem;
       display: grid;
-      grid-template-areas: "job1 job2 job3";
+      grid-template-areas: 'job1 job2 job3';
       grid-gap: 30px;
       & > div {
         background: lighten($primary-color, 5);
@@ -193,6 +193,9 @@ main {
         }
       }
       .job1 {
+        grid-area: job1;
+      }
+      .job2 {
         grid-area: job2;
       }
     }
@@ -292,8 +295,8 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-    "db-intro db-image1"
-    "db-image2 db-image1";
+    'db-intro db-image1'
+    'db-image2 db-image1';
   text-align: center;
   & > p {
     grid-area: db-intro;
@@ -315,8 +318,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "dt-intro dt-image2 dt-image3"
-    "dt-image1 dt-image2 dt-image3";
+    'dt-intro dt-image2 dt-image3'
+    'dt-image1 dt-image2 dt-image3';
   text-align: center;
   & > p {
     grid-area: dt-intro;
@@ -384,4 +387,4 @@ main {
   height: 60px;
 }
 
-@import "mobile";
+@import 'mobile';

@@ -101,7 +101,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -175,7 +175,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: "bio bio bioimage" "skill skill skill" "edu edu edu" "job job job";
+  grid-template-areas: 'bio bio bioimage' 'skill skill skill' 'edu edu edu' 'job job job';
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr; }
   .about-info .bio-image {
@@ -207,7 +207,7 @@ main {
     .about-info .edu > div {
       margin-top: 1rem;
       display: grid;
-      grid-template-areas: "edu-image edu-text edu-text";
+      grid-template-areas: 'edu-image edu-text edu-text';
       grid-gap: 30px;
       grid-template-columns: 1fr 1fr 1fr; }
       .about-info .edu > div .edu-image {
@@ -234,7 +234,7 @@ main {
       width: 100%;
       margin-top: 1rem;
       display: grid;
-      grid-template-areas: "job1 job2 job3";
+      grid-template-areas: 'job1 job2 job3';
       grid-gap: 30px; }
       .about-info .job > div > div {
         background: #515151;
@@ -243,6 +243,8 @@ main {
         .about-info .job > div > div h4 {
           font-size: 1rem; }
       .about-info .job > div .job1 {
+        grid-area: job1; }
+      .about-info .job > div .job2 {
         grid-area: job2; }
 
 .projects {
@@ -298,7 +300,7 @@ main {
 .db {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "db-intro db-image1" "db-image2 db-image1";
+  grid-template-areas: 'db-intro db-image1' 'db-image2 db-image1';
   text-align: center; }
   .db > p {
     grid-area: db-intro;
@@ -313,7 +315,7 @@ main {
 .detail {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "dt-intro dt-image2 dt-image3" "dt-image1 dt-image2 dt-image3";
+  grid-template-areas: 'dt-intro dt-image2 dt-image3' 'dt-image1 dt-image2 dt-image3';
   text-align: center; }
   .detail > p {
     grid-area: dt-intro;
