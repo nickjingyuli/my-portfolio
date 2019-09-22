@@ -399,18 +399,20 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "skill" "edu" "job";
+    grid-template-areas: 'bioimage' 'bio' 'skill' 'edu' 'job';
     grid-template-columns: 1fr; }
     .about-info .skill > div {
       grid-template-columns: 1fr 1fr; }
     .about-info .edu > div {
-      grid-template-areas: "edu-text";
+      grid-template-areas: 'edu-text';
       grid-template-columns: 1fr; }
       .about-info .edu > div .edu-image {
         display: none; }
       .about-info .edu > div .edu-name {
         flex-direction: column;
         align-items: center; }
+    .about-info .job > div {
+      grid-template-areas: 'job1' 'job2' 'job3'; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   main#movie-house {
@@ -422,9 +424,9 @@ main {
   .auth-container .auth-image {
     width: 80%; }
   .db {
-    grid-template-areas: "db-intro db-intro" "db-image2 db-image1"; }
+    grid-template-areas: 'db-intro db-intro' 'db-image2 db-image1'; }
   .detail {
-    grid-template-areas: "dt-intro dt-intro dt-intro" "dt-image1 dt-image2 dt-image3"; }
+    grid-template-areas: 'dt-intro dt-intro dt-intro' 'dt-image1 dt-image2 dt-image3'; }
     .detail .dt-image1 {
       width: 95%; }
     .detail .dt-image2 {
@@ -450,14 +452,14 @@ main {
     .auth-container .auth-image img {
       width: 100%; }
   .db {
-    grid-template-areas: "db-intro db-intro" "db-image2 db-image2" "db-image1 db-image1";
+    grid-template-areas: 'db-intro db-intro' 'db-image2 db-image2' 'db-image1 db-image1';
     grid-gap: 0.5rem; }
     .db .db-image1 {
       width: 100%; }
     .db .db-image2 {
       width: 100%; }
   .detail {
-    grid-template-areas: "dt-intro dt-intro dt-intro" "dt-image1 dt-image1 dt-image1" "dt-image3 dt-image3 dt-image3" "dt-image2 dt-image2 dt-image2";
+    grid-template-areas: 'dt-intro dt-intro dt-intro' 'dt-image1 dt-image1 dt-image1' 'dt-image3 dt-image3 dt-image3' 'dt-image2 dt-image2 dt-image2';
     grid-gap: 0.5rem; }
     .detail .dt-image1 {
       width: 100%; }
