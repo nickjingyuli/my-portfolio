@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url('../img/portrait_small.jpg');
       width: 150px;
       height: 150px;
     }
@@ -54,11 +54,11 @@
 
   .about-info {
     grid-template-areas:
-      "bioimage"
-      "bio"
-      "skill"
-      "edu"
-      "job";
+      'bioimage'
+      'bio'
+      'skill'
+      'edu'
+      'job';
 
     grid-template-columns: 1fr;
     .skill {
@@ -68,7 +68,7 @@
     }
     .edu {
       & > div {
-        grid-template-areas: "edu-text";
+        grid-template-areas: 'edu-text';
         grid-template-columns: 1fr;
         .edu-image {
           display: none;
@@ -77,6 +77,14 @@
           flex-direction: column;
           align-items: center;
         }
+      }
+    }
+    .job {
+      & > div {
+        grid-template-areas:
+          'job1'
+          'job2'
+          'job3';
       }
     }
   }
@@ -102,13 +110,13 @@
   }
   .db {
     grid-template-areas:
-      "db-intro db-intro"
-      "db-image2 db-image1";
+      'db-intro db-intro'
+      'db-image2 db-image1';
   }
   .detail {
     grid-template-areas:
-      "dt-intro dt-intro dt-intro"
-      "dt-image1 dt-image2 dt-image3";
+      'dt-intro dt-intro dt-intro'
+      'dt-image1 dt-image2 dt-image3';
     .dt-image1 {
       width: 95%;
     }
@@ -158,9 +166,9 @@
   }
   .db {
     grid-template-areas:
-      "db-intro db-intro"
-      "db-image2 db-image2"
-      "db-image1 db-image1";
+      'db-intro db-intro'
+      'db-image2 db-image2'
+      'db-image1 db-image1';
     grid-gap: 0.5rem;
 
     .db-image1 {
@@ -172,10 +180,10 @@
   }
   .detail {
     grid-template-areas:
-      "dt-intro dt-intro dt-intro"
-      "dt-image1 dt-image1 dt-image1"
-      "dt-image3 dt-image3 dt-image3"
-      "dt-image2 dt-image2 dt-image2";
+      'dt-intro dt-intro dt-intro'
+      'dt-image1 dt-image1 dt-image1'
+      'dt-image3 dt-image3 dt-image3'
+      'dt-image2 dt-image2 dt-image2';
     grid-gap: 0.5rem;
 
     .dt-image1 {
